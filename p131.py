@@ -4,7 +4,7 @@ import csv
 
 df=pd.read_csv("main.csv")
 
-df['Radius']=df['Radius'].apply(lambda x: x.replace('$', '').replace(',', '')).astype('float')
+df['Radius']=df['Radius'].astype('float')
 mass= df ["Mass"].to_list()
 radius= df ["Radius"].to_list()
 gravity =[]
